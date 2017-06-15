@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<title>商品详情页面</title>
+<meta name="apple-mobile-web-app-title" content="标题">
+<!-- 添加到主屏后的标题（iOS 6 新增） -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+<!-- 添加智能 App 广告条 Smart App Banner（iOS 6+ Safari） -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<!-- 设置苹果工具栏颜色 -->
+<meta name="format-detection" content="telphone=no, email=no"/>
+<!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+<meta name="HandheldFriendly" content="true">
+<!-- 微软的老式浏览器 -->
+<meta name="MobileOptimized" content="320">
+<!-- uc强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<!-- UC强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- UC应用模式 -->
+<meta name="x5-page-mode" content="app">
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
+<!-- iOS 图标 begin -->
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png"/>
+<!-- iPhone 和 iTouch，默认 57x57 像素，必须有 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png"/>
+<!-- Retina iPhone 和 Retina iTouch，114x114 像素，可以没有，但推荐有 -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png"/>
+<!-- Retina iPad，144x144 像素，可以没有，但推荐有 -->
+<!-- iOS 图标 end -->
+<!-- iOS 启动画面 begin -->
+<link rel="apple-touch-startup-image" sizes="768x1004" href="/splash-screen-768x1004.png"/>
+<!-- iPad 竖屏 768 x 1004（标准分辨率） -->
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="/splash-screen-1536x2008.png"/>
+<!-- iPad 竖屏 1536x2008（Retina） -->
+<link rel="apple-touch-startup-image" sizes="1024x748" href="/Default-Portrait-1024x748.png"/>
+<!-- iPad 横屏 1024x748（标准分辨率） -->
+<link rel="apple-touch-startup-image" sizes="2048x1496" href="/splash-screen-2048x1496.png"/>
+<!-- iPad 横屏 2048x1496（Retina） -->
+<link rel="apple-touch-startup-image" href="/splash-screen-320x480.png"/>
+<!-- iPhone/iPod Touch 竖屏 320x480 (标准分辨率) -->
+<link rel="apple-touch-startup-image" sizes="640x960" href="/splash-screen-640x960.png"/>
+<!-- iPhone/iPod Touch 竖屏 640x960 (Retina) -->
+<link rel="apple-touch-startup-image" sizes="640x1136" href="/splash-screen-640x1136.png"/>
+<!-- iPhone 5/iPod Touch 5 竖屏 640x1136 (Retina) -->
+<!-- iOS 启动画面 end -->
+<!-- iOS 设备 end -->
+<meta name="msapplication-TileColor" content="#000"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="robots" content="index,follow"/>
+<!--<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">-->
+<meta name="description" content="移动商城，镜尚产品" />
+<meta name="keywords" content="移动商城，镜尚产品" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-itunes-app" content="app-id=425349261">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="css/mybase.css" rel="stylesheet">
+<link rel="stylesheet" href="css/swiper.css">
+<style>
+    *{
+		margin:0;
+		padding:0;
+		}
+    .swiper-container {
+        width: 100%;
+        /*height: 100%;*/
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	.swiper-slide img{
+		width:100%;
+		height:auto;
+		display:block;
+		}
+		</style>
+</head>
+<body>
+<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/xiang01.png" alt="First slide"></div>
+            <div class="swiper-slide"><img src="images/xiang02.jpg" alt="First slide"></div>
+            <div class="swiper-slide"><img src="images/xiang03.jpg" alt="First slide"></div>
+            <div class="swiper-slide"><img src="images/xiang04.jpg" alt="First slide"></div>
+            <div class="swiper-slide"><img src="images/xiang05.jpg" alt="First slide"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+</div>
+    <div class="goodtitle">
+        <a href="#">GUCCI／古驰 女士粉色经典牛皮手提包 高档豪华性感CVLEG</a>
+      </div>
+      <div class="goodcost">
+        <a href="#">￥584123</a>
+      </div>
+      <div class="goodtext"><span>免运费</span><span>剩余：<strong>23</strong></span><span>销量：<strong>8976</strong></span></div>
+      <div class="goodtexttwo clear">
+            <div class="danbao fl"><span>担保交易</span></div>
+            <div class="reason fl"><span>七天无理由退换货</span></div>
+            <div class="talk fl"><span>如实描述</span></div>
+      </div>
+      <div class="nocon"></div>
+      <div style="position:relative">
+          <div class="colorchoose">
+                <span class="colorbox">请选择</span><span class="cl"></span><span class="sz"></span><span class="jis"></span>
+                <span style="float:right"><img src="images/n_07.png"></span>
+          </div>
+          <div class="colortan" id="proParacolor">
+          			<!--<div class="clear"><span class="fr" id="closeit"><img src="images/ccxx.png" style="width:0.32rem;"></span></div>-->
+                    <div class="co">颜色选择:</div>
+                    <div class="size"><span>红色</span><span>蓝色</span><span>白色</span><span>黑色</span><span>橙色</span><span>绿色</span><span>黄色</span><span>紫色</span></div>
+                    <div class="co">尺码选择:</div>
+                    <div class="ss"><span>s</span><span>m</span><span>l</span><span>xl</span><span>xxl</span><span>xxxl</span></div>
+                    <div class="gn">数量<b class="ch-num"><span id="redjian">-</span><span style="width:0.8rem" id="chn">1</span><span id="pljia">+</span></b></div>
+                    <div class="sureme" onClick="selected()">确定</div>
+          </div>
+      </div>
+      <div class="nocon"></div>
+      <div>
+        <div class="ProductDetails">
+            <div class="detail01 clear">
+                <div class="detailcon01 fl">商品详情</div>
+                <div class="detailcon02 fr">评价</div>
+            </div>
+        </div>
+      </div>
+    <div class="willrelative"><!--这是商品详情和评价所有的内容-->
+        <div class="willabsolute01 okgoodeva"><!--这是商品详情的内容，它和评价是并列的，只能显示其中一个---willabsolute01--->
+            <div class="detailimg01"><img src="images/xiangqing_07.png"></div>
+            <div class="detailimg02"><img src="images/m_03.png"></div>
+            <div class="detailimg03"><img src="images/xiangqing_11.png"></div>
+            <div class="detailimg04"><img src="images/o_03.png"></div>
+            <div class="detailimg05"><img src="images/xiangqing_18.png"></div>
+            <div class="detailimg05"><img src="images/xiangqing_20.png"></div>
+            <div class="detailimg05"><img src="images/xiangqing_22.png"></div>
+            <div class="detailimg05"><img src="images/xiangqing_24.png"></div>
+        </div><!--这是商品详情的内容，它和评价是并列的，只能显示其中一个---willabsolute01---这是它的闭合标签----->
+        <div class="willabsolute02 okgoodeva"><!--这是评价的内容，它和商品详情是并列的，只能显示其中一个---willabsolute02--->
+            <div class="evaluate">
+                <span class="evaluatetitle" style="background:#d3b182;color:#FFF">全部</span>
+                <span class="evaluatetitle">好评</span>
+                <span class="evaluatetitle">中评</span>
+                <span class="evaluatetitle">差评</span>
+            </div>
+            <div class="NoComment" style="display:none">暂无评论</div>
+            <div class="evaluatewrapper"><!--这是评价的内容，有好评等等------------给它进行相对定位，因为要给下面四个盒子都绝对定位------>
+                <div class="evaluatealltxt" style="display:none"><!--这是第一个绝对定位的盒子，也是全部评价的盒子，这是所有评价的内容-->
+                    <div class="evaluatecon clear">
+                        <div class="fl evaluateconleft"><img src="images/pingjia_11.png"></div>
+                        <div class="fl evaluateconright">
+                            <p class="evaluateusername">爱猫咪的good girl</p>
+                            <p class="evaluateusertime">2016-9-28<span class="hours">18:06:54</span></p>
+                            <p class="evaluateusercon">上次去法国没买到，看到这里有，果断下手，价格还可以，和国外差不多，比实体店便宜</p>
+                        </div>
+                    </div>
+                    <div class="evaluatecon clear">
+                        <div class="fl evaluateconleft"><img src="images/pingjia_11.png"></div>
+                        <div class="fl evaluateconright">
+                            <p class="evaluateusername">爱猫咪的good</p>
+                            <p class="evaluateusertime">2016-9-28<span class="hours">18:06:54</span></p>
+                            <p class="evaluateusercon">上次去法国没买到，看到这里有，果断下手，价格还可以，和国外差不多，比实体店便宜</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="evaluatealltxt" style="display:none;"><!--这是第二个绝对定位的盒子，也是好评评价的盒子，这是好评的所有的的内容-->
+                    <div class="evaluatecon clear">
+                        <div class="fl evaluateconleft"><img src="images/pingjia_11.png"></div>
+                        <div class="fl evaluateconright">
+                            <p class="evaluateusername">爱猫咪的good girl</p>
+                            <p class="evaluateusertime">2016-9-28<span class="hours">18:06:54</span></p>
+                            <p class="evaluateusercon">上次去法国没买到，看到这里有，果断下手，价格还可以，和国外差不多，比实体店便宜，好评，服务好</p>
+                        </div>
+                    </div>
+                    <div class="evaluatecon clear">
+                        <div class="fl evaluateconleft"><img src="images/pingjia_11.png"></div>
+                        <div class="fl evaluateconright">
+                            <p class="evaluateusername">爱猫咪的good</p>
+                            <p class="evaluateusertime">2016-9-28<span class="hours">18:06:54</span></p>
+                            <p class="evaluateusercon">上次去法国没买到，特别喜欢，特别满意，非常开心，看到这里有，果断下手，价格还可以，和国外差不多，比实体店便宜</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="evaluatealltxt" style="display:block;"><!--这是三个绝对定位的盒子，也是中评的内容的盒子，这是中评的所有的的内容-->
+                    <div class="evaluatecon clear">
+                        <div class="fl evaluateconleft"><img src="images/pingjia_11.png"></div>
+                        <div class="fl evaluateconright">
+                            <p class="evaluateusername">爱猫咪的good girl</p>
+                            <p class="evaluateusertime">2016-9-28<span class="hours">18:06:54</span></p>
+                            <p class="evaluateusercon">上次去法国没买到，看到这里有，果断下手，价格还可以，和国外差不多，比实体店便宜，一般般吧</p>
+                        </div>
+                    </div>
+                    <div class="evaluatecon clear">
+                        <div class="fl evaluateconleft"><img src="images/pingjia_11.png"></div>
+                        <div class="fl evaluateconright">
+                            <p class="evaluateusername">爱猫咪的good</p>
+                            <p class="evaluateusertime">2016-9-28<span class="hours">18:06:54</span></p>
+                            <p class="evaluateusercon">一般般，上次去法国没买到，特别喜欢，特别满意，非常开心，看到这里有，果断下手，价格还可以，和国外差不多，比实体店便宜</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="evaluatealltxt" style="display:none"><!--这是四个绝对定位的盒子，也是差评的内容的盒子，这是差评的所有的的内容-->
+                    <div class="evaluatecon clear">
+                        <div class="fl evaluateconleft"><img src="images/pingjia_11.png"></div>
+                        <div class="fl evaluateconright">
+                            <p class="evaluateusername">爱猫咪的good girl</p>
+                            <p class="evaluateusertime">2016-9-28<span class="hours">18:06:54</span></p>
+                            <p class="evaluateusercon">不满意，上次去法国没买到，看到这里有，果断下手，价格还可以，和国外差不多，比实体店便宜，一点都不好，什么东东</p>
+                        </div>
+                    </div>
+                    <div class="evaluatecon clear">
+                        <div class="fl evaluateconleft"><img src="images/pingjia_11.png"></div>
+                        <div class="fl evaluateconright">
+                            <p class="evaluateusername">爱猫咪的good</p>
+                            <p class="evaluateusertime">2016-9-28<span class="hours">18:06:54</span></p>
+                            <p class="evaluateusercon">买的不怎么样，非常sad，看到这里有，非常失望，价格可以，和国外差不多，比实体店便宜</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!--这是评价的内容，有好评等等------------给它进行相对定位，因为要给下面四个盒子都绝对定位------它的结束标签---->
+        </div><!--这是评价的内容，它和商品详情是并列的，只能显示其中一个--------这是它的闭合标签----->
+    </div><!--这是商品详情和评价所有的内容---------最外面的大盒子的闭合标签------------------>
+    <div class="moregoodwrapper"><!--这是更多精选商品的所有内容外面的大盒子-->
+    	<div class="moregoodtitle"><img src="images/moregood01.png"></div>
+        <div class="moregoodlists">
+        	<a href="#"><div>
+            	<p><img src="images/xiangqing_35.png"></p>
+                <p>圣罗兰 *女士 小牛皮 压 鳄鱼纹 迷你单1111肩包 红色 </p>
+                <p class="numbergood">￥8776</p>
+            </div></a>
+            <a href="#"><div>
+            	<p><img src="images/xiangqing_35.png"></p>
+                <p>圣罗兰 *女士 小牛皮 压 鳄鱼纹 迷你单肩包 红色 </p>
+                <p class="numbergood">￥8776</p>
+            </div></a>
+            <a href="#"><div>
+            	<p><img src="images/xiangqing_35.png"></p>
+                <p>圣罗兰 *女士 小牛皮 压 鳄鱼纹 迷你单肩包 红色 </p>
+                <p class="numbergood">￥8776</p>
+            </div></a>
+            <a href="#"><div>
+            	<p><img src="images/xiangqing_35.png"></p>
+                <p>圣罗兰 *女士 小牛皮 压 鳄鱼纹 迷你单肩包 红色 </p>
+                <p class="numbergood">￥8776</p>
+            </div></a>
+        </div>
+    </div>
+    <!--开始写最后一部分，相当于底部导航-->
+    <div class="allbotnavcon clear">
+    	<div class="allbotnavconleft fl clear">
+        	<div class="fl">
+            	<a href="index.html">
+                	<p class="home"><img src="images/xiangqing_48.png" width="39" height="34"></p><p class="ptxt">首页</p>
+                </a>
+            </div>
+            <div class="fl collbor">
+            	<a href="#" id="coll">
+                	<p class="home"><img src="images/xiangqing_50.png"></p>
+                    <p class="ptxt">收藏</p>
+                </a>
+            </div>
+        </div>
+        <div class="allbotnavconright fl" id="sad">
+        	<button class="joinshop">加入购物车</button>
+            <button class="rightnow">立即购买</button>
+        </div>
+    </div>
+<script src="js/jingalljs.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        autoplay: 2500,
+        paginationClickable: true
+    });
+</script>
+</body>
+</html>

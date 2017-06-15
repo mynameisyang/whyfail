@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<meta name="apple-mobile-web-app-title" content="标题">
+<!-- 添加到主屏后的标题（iOS 6 新增） -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<!-- 设置苹果工具栏颜色 -->
+<meta name="format-detection" content="telphone=no, email=no"/>
+<!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+<meta name="renderer" content="webkit">
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+<meta name="x5-page-mode" content="app">
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
+<!-- iOS 图标 begin -->
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png"/>
+<!-- iPhone 和 iTouch，默认 57x57 像素，必须有 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png"/>
+<!-- Retina iPhone 和 Retina iTouch，114x114 像素，可以没有，但推荐有 -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png"/>
+<!-- Retina iPad，144x144 像素，可以没有，但推荐有 -->
+<!-- iOS 图标 end -->
+<!-- iOS 启动画面 begin -->
+<link rel="apple-touch-startup-image" sizes="768x1004" href="/splash-screen-768x1004.png"/>
+<!-- iPad 竖屏 768 x 1004（标准分辨率） -->
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="/splash-screen-1536x2008.png"/>
+<!-- iPad 竖屏 1536x2008（Retina） -->
+<link rel="apple-touch-startup-image" sizes="1024x748" href="/Default-Portrait-1024x748.png"/>
+<!-- iPad 横屏 1024x748（标准分辨率） -->
+<link rel="apple-touch-startup-image" sizes="2048x1496" href="/splash-screen-2048x1496.png"/>
+<!-- iPad 横屏 2048x1496（Retina） -->
+<link rel="apple-touch-startup-image" href="/splash-screen-320x480.png"/>
+<!-- iPhone/iPod Touch 竖屏 320x480 (标准分辨率) -->
+<link rel="apple-touch-startup-image" sizes="640x960" href="/splash-screen-640x960.png"/>
+<!-- iPhone/iPod Touch 竖屏 640x960 (Retina) -->
+<link rel="apple-touch-startup-image" sizes="640x1136" href="/splash-screen-640x1136.png"/>
+<!-- iPhone 5/iPod Touch 5 竖屏 640x1136 (Retina) -->
+<!-- iOS 设备 end -->
+<meta name="msapplication-TileColor" content="#000"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<meta name="robots" content="index,follow"/>
+<!--<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">-->
+<meta name="description" content="移动商城，镜尚产品" />
+<meta name="keywords" content="移动商城，镜尚产品" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="apple-itunes-app" content="app-id=425349261">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="css/mybase.css" rel="stylesheet">
+<!--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--本页新代码，-->
+    <div class="centerboxwrapper">
+    	<div class="divboxcon"><img src="images/tx.png" class="Headportrait"></div>
+        <div class="divboxcon">Laurence.X</div>
+        <div class="divboxcon">
+        	<div class="Specialstyle">
+            	<span class="lingjifentubiao" onclick="funcLayer('签到成功')"><img src="images/JStubiao07.png"></span>
+                <span class="lingjifen" onclick="funcLayer('签到成功')">领积分</span>
+                <span class="jifenspan">180</span>
+            </div>
+        </div>
+    </div>
+    <!--下面是待收货，待付款，待发货，待评价的所有的内容，-->
+    <div class="shippedwrapper">
+    	<a href="myorders.html">
+        	<p><img src="images/fk.png"></p>
+        	<p>待付款</p>
+        </a>
+        <a href="beshipped.html">
+        	<p><img src="images/fahuo.png"></p>
+        	<p>待发货</p>
+        </a>
+        <a href="receipt.html">
+        	<p><img src="images/daifa.png"></p>
+        	<p>待收货</p>
+        </a>
+        <a href="evaluate.html">
+        	<p><img src="images/pj.png"></p>
+        	<p>待评价</p>
+        </a>
+        <a href="refund.html">
+        	<p><img src="images/tuikuan.png"></p>
+        	<p>退款/维权</p>
+        </a>
+    </div>
+    <div style="font-size:0"><a href="allorders.html" class="allorders"><img src="images/all-dd.png" class="qianicon"><span class="ordertext">全部订单</span><span class="floatrighttu"><img src="images/arrow-right.png"></span></a></div>
+    <div class="menullbox"></div>
+    <!--下面的是收藏的商品还有我的积分，个人设置还有意见反馈的内容-->
+    <div style="font-size:0">
+        <a href="collection.html" class="allorders">
+        	<img src="images/xiangqing_50.png" class="qianicon"><span class="ordertext">收藏的商品</span><span class="floatrighttu"><img src="images/arrow-right.png"></span>
+        </a>
+        <a href="integral.html" class="allorders topbotbor">
+        	<img src="images/jifen.png" class="qianicon"><span class="ordertext">我的积分</span><span class="floatrighttu"><img src="images/arrow-right.png"></span>
+        </a>
+        <a href="mycommission.html" class="allorders topbotbor">
+        	<img src="images/priceicon.png" class="qianicon"><span class="ordertext">我的佣金</span><span class="floatrighttu"><img src="images/arrow-right.png"></span>
+        </a>
+        <a href="tabcoupon.html" class="allorders gerenshezhi">
+        	<img src="images/center02.png" class="qianiconcc"><span class="ordertext">我的优惠券</span><span class="floatrighttu"><img src="images/arrow-right.png"></span>
+        </a>
+        <a href="couponm.html" class="allorders gerenshezhi">
+        	<img src="images/center01.png" class="qianiconcc"><span class="ordertext">领券中心</span><span class="floatrighttu"><img src="images/arrow-right.png"></span>
+        </a>
+        <a href="myplease.html" class="allorders gerenshezhi">
+        	<img src="images/fk-131.png" class="qianiconcc"><span class="ordertext">我的邀请码</span><span class="floatrighttu"><img src="images/arrow-right.png"></span>
+        </a>
+        <a href="setting.html" class="allorders gerenshezhi">
+        	<img src="images/shezhi.png" class="qianicon"><span class="ordertext">个人设置</span><span class="floatrighttu"><img src="images/arrow-right.png"></span>
+        </a>
+        <a href="adsive.html" class="allorders">
+        	<img src="images/fk-13.png" class="qianicon"><span class="ordertext">意见反馈</span><span class="floatrighttu"><img src="images/arrow-right.png"></span>
+        </a>
+    </div>
+    <div class="menullboxbottom"></div>
+    <div class="mybotnav">
+    	<div class="fl navlist">
+            <a href="index.html" class="fugaia"><p class="navicon"><img src="images/navlist001.png" height="44"></p><p class="jingxuan">精选</p></a>
+        </div>
+        <div class="fl navlist">
+        	<a href="classify.html" class="fugaia"><p class="navicon"><img src="images/navlist02.png"></p><p class="jingxuan">分类</p></a>
+        </div>
+        <div class="fl navlist">
+        	<a href="shoppingcart.html" class="fugaia"><p class="navicon"><img src="images/navlist03.png" width="61"></p><p class="jingxuan">购物车</p></a>
+        </div>
+        <div class="fl navlist">
+        	<a href="#" class="fugaia"><p class="navicon"><img src="images/navlist004.png" height="44"></p><p class="jingxuan">我的</p></a>
+        </div>
+    </div>
+<script src="js/jingalljs.js"></script>
+<script type="text/javascript">
+ $(function(){
+	 var flag = 0;
+	 $(".lingjifen,.lingjifentubiao").click(function(){
+		 if(flag == 1){
+			 funcLayer("今日已签到！！！");
+			 return;
+		 }
+		 flag = 1;
+		 $.ajax({
+				url: '<%=path%>/user!getLoginIntegral.act',
+				type: 'POST',
+				dataType : "json",
+				success:function(json){
+					if(json == 201){
+						funcLayer("领取失败！！！");
+					}else{
+						funcLayer("领取成功！！！");
+						$(".jifenspan").text(json);
+					}
+				}
+			});
+	 });
+ });
+ </script>
+</body>
+</html>
